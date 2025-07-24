@@ -1,13 +1,13 @@
 
-type Props = {
-  carsBrands?: string[];
-  names: string[];
-  employees?: {
-    name: string;
-    age: number;
-    position: string;
-  }
-}
+// type Props = {
+//   carsBrands?: string[];
+//   names: string[];
+//   employees?: {
+//     name: string;
+//     age: number;
+//     position: string;
+//   }
+// }
 
 export default function About() {
 
@@ -20,11 +20,17 @@ export default function About() {
     lname: 'Doe',
   }
 
+  const { name, age, position } = {
+    name: 'John Doe',
+    age: 30,
+    position: 'Software Engineer'
+  }
+
 
   return (
     <div>
         <p>{datas}</p>
-        {/* <p>{...employees}</p> */}
+        <p>{`${employees.fname} ${employees.lname}`}</p>
         <p>{`Name: ${name}, Age: ${age}, Position: ${position}`}</p>
         <h1>About</h1>
     </div>
