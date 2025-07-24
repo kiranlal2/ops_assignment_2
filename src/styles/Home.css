@@ -1,0 +1,182 @@
+.home_main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.parallax_container {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    position: relative;
+    top: 0;
+    align-items: center;
+}
+
+.parallax_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.parallax_img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.bg_layer {
+    transform: translateZ(-21px) scale(22);
+}
+
+.space_layer {
+    transform: translateZ(-20px) scale(20);
+}
+
+.stars_layer {
+    transform: translateZ(-18px) scale(18);
+}
+
+.planet1_layer {
+    transform: translateZ(-14px) scale(16);
+}
+
+.planet2_layer {
+    transform: translateZ(-14px) scale(14);
+}
+
+.planet3_layer {
+    transform: translateZ(-12px) scale(12);
+}
+
+.planet4_layer {
+    transform: translateZ(-10px) scale(10);
+}
+
+.planet5_layer {
+    transform: translateZ(-8px) scale(8);
+}
+
+.planet6_layer {
+    transform: translateZ(-6px) scale(6);
+}
+
+.stones_layer {
+    transform: translateZ(-2.5px) scale(4);
+}
+
+.lights_layer {
+    transform: translateZ(-2px) scale(2);
+}
+
+#bg_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#space_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#stars_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#planet1_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#planet2_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#planet3_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#planet4_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#planet5_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#planet6_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#stones_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#lights_img {
+    width: 100dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content_layer {
+    transform: translateZ(0);
+    position: relative;
+    height: 100dvh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.content_layer p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.parallax_title {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #b11659, 0 0 20px #b11659, 0 0 30px #b11659;
+}
+
+.home_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    height: 100dvh;
+    justify-content: space-between;
+}

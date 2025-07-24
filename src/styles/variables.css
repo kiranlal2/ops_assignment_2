@@ -1,0 +1,21 @@
+/* src/styles/variables.css */
+:root {
+  --primary-color: red;
+  --secondary-color: rgb(255, 123, 0);
+  --text-dark: #252525;
+  --text-white: #ffffff;
+  --background-color: #ffffff;
+
+  --font-family-sans: 'Avenir', sans-serif;
+  --font-family-mono: 'Fira Code', monospace;
+
+  --border-radius: 0.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #3b82f6;
+    --secondary-color: #f59e0b;
+    --text-color: #d1d5db;
+    --background-color: #1f2937;
+  }
+}
